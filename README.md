@@ -9,51 +9,33 @@
 
 ```
 origin-core/
-├── docs/                    # GDD + Documentation
-│   ├── GDD/                 # Game Design Documents
+├── README.md                ✅ (présentation)
+├── .env.example             ✅ (config template)
+├── Procfile                 ✅ (Railway deploy)
+├── requirements.txt         ✅ (dépendances)
+│
+├── api/                     ✅ (Backend - à créer dedans)
+│   └── t.txt
+│
+├── docs/                    ✅ (Documentations)
+│   ├── gdd/                 ✅ (GDD files)
 │   │   ├── 00-MASTER-Phase1.md
 │   │   ├── 01-Business-Plan.md
 │   │   ├── 02-Kirou-Tamagotchi.md
 │   │   ├── 03-HUD-System.md
 │   │   └── 04-Dev-Roadmap.md
-│   ├── idées/               # Brainstorm
-│   ├── images/              # Références visuelles
-│   └── refs/                # Références externes
+│   ├── idees/               ✅ (Brainstorm)
+│   ├── images/              ✅ (Refs visuelles)
+│   │   ├── Kirou Chat ref
+│   │   └── ...
+│   └── refs/                ✅ (Références externes)
 │
-├── api/                     # Backend FastAPI (Production)
-│   ├── main.py              # Routes FastAPI
-│   ├── models.py            # SQLAlchemy ORM
-│   ├── database.py          # Configuration DB
-│   ├── logic.py             # Business logic
-│   ├── config.py            # Settings
-│   ├── requirements.txt      # Dépendances Python
-│   └── Procfile             # Railway deployment
+├── assets/                  ✅ (Blender + LSL - à créer dedans)
+│   └── t.txt
 │
-├── lsl/                     # Scripts Second Life
-│   ├── hud_main.lsl         # HUD Interface joueur
-│   ├── kirou.lsl            # Logique Kirou
-│   └── rita.lsl             # Rita IA Chat
-│
-├── blender/                 # Modèles 3D
-│   ├── kirou-chat.blend     # Modèle Kirou
-│   └── animations/          # Fichiers animations
-│
-├── _archive/                # Scripts/code de reference (old)
-│   ├── old_kirou/
-│   ├── old_rita/
-│   └── notes.md
-│
-├── tests/                   # Tests unitaires
-│   ├── test_api.py
-│   └── test_logic.py
-│
-├── README.md                # Ce fichier
-├── .gitignore               # Git ignore rules
-├── .env.example             # Template variables
-└── .github/                 # GitHub config
-    └── CONTRIBUTING.md      # Guide contribution
-```
-
+└── archives/                ✅ (Vieux code de reference)
+    ├── kirou/
+    └── rita/
 ---
 
 ## 🚀 Quick Start
